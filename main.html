@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Self introduction</title>
+    <meta charset ="utf-8">
+  </head>
+  <body>
+    <h2> 메뉴 </h2>
+    <ol>
+      <li> <a onclick="
+            fetch('major').then(function(response){
+                response.text().then(function(text){
+                    document.querySelector('article').innerHTML = text;
+                })
+            })
+        ">>학과 </li>
+      <li> <a onclick="
+            fetch('harby').then(function(response){
+                response.text().then(function(text){
+                    document.querySelector('article').innerHTML = text;
+                })
+            })
+        ">> 취미 </li>
+      <li> <a onclick="
+            fetch('goal').then(function(response){
+                response.text().then(function(text){
+                    document.querySelector('article').innerHTML = text;
+                })
+            })
+        "> 목표 </li>
+    </ol>
+    <article>
+    </article>
+  </body>
+</html>
